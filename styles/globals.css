@@ -1,7 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: 'vazir';
+  src: url('./fonts/vazir.eot') format('eot'),
+   url('./fonts/vazir.ttf') format('truetype'),
+  url('./fonts/vazir.woff') format('woff'),
+  url('./fonts/vazir.woff2') format('woff2');
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +30,5 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: "vazir";
 }
